@@ -9,4 +9,4 @@
 </view>
 <view class="grid col-5 padding-sm" bindtap="handleNext">
     <button class="cu-btn round bg-olive {{shadow?'shadow':''}}">下一个</button>
-</view>
+</view>  
