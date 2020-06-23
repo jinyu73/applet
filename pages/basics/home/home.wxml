@@ -1,0 +1,12 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">笑话大全</view>
+</cu-custom>
+
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="text-content">{{jokeData[subscript].content}}</view>
+  </view>
+</view>
+<view class="grid col-5 padding-sm" bindtap="handleNext">
+    <button class="cu-btn round bg-olive {{shadow?'shadow':''}}">下一个</button>
+</view>

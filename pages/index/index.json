@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "basics": "/pages/basics/home/home",
+    "order": "/pages/order/home/home"
+  }
+}

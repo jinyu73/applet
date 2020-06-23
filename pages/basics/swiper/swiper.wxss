@@ -1,0 +1,10 @@
+/* pages/swiper/swiper.wxss */
+swiper{
+  height: auto;
+}
+.screen-swiper{
+  height: 375rpx;
+}
+image{
+  width: 100%;
+}
