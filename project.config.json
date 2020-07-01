@@ -20,11 +20,13 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.2",
-	"appid": "wxde19af398e2a5ab1",
+	"appid": "wx7840f7cd76363cf6",
 	"projectname": "courierNumber",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -72,15 +74,50 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/order/home/home",
-					"pathName": "pages/order/home/home",
+					"name": "pages/mine/home/home",
+					"pathName": "pages/mine/home/home",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/mine/home/home",
-					"pathName": "pages/mine/home/home",
+					"name": "pages/basics/weather/weather",
+					"pathName": "pages/basics/weather/weather",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/basics/diary/diary",
+					"pathName": "pages/basics/diary/diary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/basics/loveTalk/loveTalk",
+					"pathName": "pages/basics/loveTalk/loveTalk",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/basics/toxic/toxic",
+					"pathName": "pages/basics/toxic/toxic",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/basics/musicReview/musicReview",
+					"pathName": "pages/basics/musicReview/musicReview",
 					"scene": null
 				}
 			]

@@ -18,7 +18,6 @@ Page({
     })
   },
   onShow() {
-    console.log(1)
   },
 
   // 分享

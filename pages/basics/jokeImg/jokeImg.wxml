@@ -1,0 +1,12 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">最新趣图</view>
+</cu-custom>
+
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <image mode="widthFix" src="{{jokeData[subscript].url}}"></image>   
+  </view>
+</view>
+<view class="padding flex flex-direction" bindtap="handleNext">
+    <button class="cu-btn lg round bg-olive">下一个</button>
+</view>    

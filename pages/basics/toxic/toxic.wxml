@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="content">心灵毒鸡汤</view>
+</cu-custom>
+<view class="content-wrapper">
+    <image class="" src="/images/home/toxic.jpg" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="content-text" selectable="false" space="false" decode="false">
+      {{toxicData}}
+    </text>
+        
+</view>
+<view class="padding flex flex-direction btn-wrapper" bindtap="handleNext">
+    <button class="cu-btn lg round bg-olive">再喝一碗</button>
+</view> 

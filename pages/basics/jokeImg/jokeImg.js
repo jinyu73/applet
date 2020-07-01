@@ -1,3 +1,4 @@
+const app = getApp();
 
 Page({
 
@@ -5,21 +6,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    TabCur: 0,
-    orderList: [{
-      text: "滞留件"
-    },{
-      text: "在库件"
-    },{
-      text: "完成件"
-    }]
+    jokeImgData: [],
+    subscript: 0,
+    pageNo: 1,
+    limit: 10
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.handleSearch()
   },
 
   /**
@@ -33,7 +30,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.startPullDownRefresh()
+
   },
 
   /**
@@ -70,9 +67,37 @@ Page({
   onShareAppMessage: function () {
 
   },
-  tabSelect(e) {
+  handleSearch() {
+    app.res.req("Joke/NewstImg","GET",{
+      key:	"9a71b42a0bac4696828bddbe6629b690",
+      time: parseInt(+new Date()/1000),
+      sort:	"desc",
+      page: this.data.pageNo,
+      rows: this.data.limit
+    }).then(res => {
+      if (res.error_code === 0) {
+        this.setData({
+          jokeData: res.result,
+          subscript: 0
+        })
+        return
+      }
+      wx.showToast({
+        title: "网络繁忙，请稍后重试",
+        icon: none
+      })
+    })
+  },
+  handleNext() {
+    if (this.data.subscript === 9) {
+      this.setData({
+        pageNo: this.data.pageNo + 1
+      })
+      this.handleSearch()
+      return
+    }
     this.setData({
-      TabCur: e.currentTarget.dataset.id
+      subscript: this.data.subscript+1
     })
   }
 })

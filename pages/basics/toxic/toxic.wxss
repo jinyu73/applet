@@ -1,0 +1,24 @@
+page {
+    background-color: #fff;
+}
+.content-wrapper{
+    padding: 40rpx 30rpx 0;
+    text-align: center;
+}
+.content-text{
+    display: block;
+    font-size: 34rpx;
+    text-indent:2em;
+    text-align: left;
+    
+}
+.btn-wrapper{
+    position: fixed;
+    bottom: 80rpx;
+    left: 0;
+    right: 0;
+}
+.cu-btn {
+    width: 100% !important;
+    border-radius: 20rpx;
+}

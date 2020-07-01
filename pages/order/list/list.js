@@ -26,10 +26,8 @@ Component({
    */
   methods: {
     onPullDownRefresh: function () {
-      console.log(1)
     },
     onPulling(e) {
-      console.log('onPulling:', e)
     },
     onRefresh() {
       if (this._freshing) return
@@ -46,11 +44,9 @@ Component({
   * 页面相关事件处理函数--监听用户下拉动作
   */
   onPullDownRefresh: function () {
-    console.log(1)
   },
   lifetimes: {
     attached: function(){
-      console.log(0)
     }
   }
 })

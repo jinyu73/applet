@@ -1,5 +1,0 @@
-<!--pages/basics/map/map.wxml-->
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
-  <view slot="content">附近智能箱</view>
-</cu-custom>
-<map id="map" longitude="113.324520" latitude="23.099994" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location style="width: 100%; height: 100vh;"></map>

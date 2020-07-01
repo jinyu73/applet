@@ -1,3 +1,4 @@
+const app = getApp();
 
 Page({
 
@@ -5,21 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    TabCur: 0,
-    orderList: [{
-      text: "滞留件"
-    },{
-      text: "在库件"
-    },{
-      text: "完成件"
-    }]
+    toxicData: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getToxicInfo()
   },
 
   /**
@@ -33,7 +27,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.startPullDownRefresh()
+
   },
 
   /**
@@ -70,9 +64,30 @@ Page({
   onShareAppMessage: function () {
 
   },
-  tabSelect(e) {
-    this.setData({
-      TabCur: e.currentTarget.dataset.id
+
+  /**
+   * 获取数据
+   */
+  getToxicInfo() {
+    app.res.req("api/soul","GET").then(res => {
+      if (res.code === 200) {
+        let content = res.data.title;
+        return this.setData({
+          toxicData: content
+        })
+      }
+      wx.showToast({
+        title: res.msg,
+        icon: 'none'
+      });
+        
     })
+  },
+
+  /**
+   * 下一个
+   */
+  handleNext() {
+    this.getToxicInfo()
   }
 })

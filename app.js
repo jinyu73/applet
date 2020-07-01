@@ -18,7 +18,6 @@ App({
     })
   },
   onShow(options) {
-    console.log(options)
   },
   res: {
     req: http.req

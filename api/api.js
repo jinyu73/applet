@@ -18,5 +18,13 @@ module.exports = {
   "QueryJokeByTime": {
     "url": "Joke/QueryJokeByTime",
     "method": "GET"
+  },
+  "flatterer": {
+    "url": "api/dog",
+    "method": "GET"
+  },
+  "loveTalk": {
+    "url": "api/qinghua",
+    "method": "GET"
   }
 }

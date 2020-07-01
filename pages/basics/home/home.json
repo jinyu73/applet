@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "swiper": "/pages/basics/swiper/swiper",
-    "grid": "/pages/basics/grid/grid"
-  }
-}

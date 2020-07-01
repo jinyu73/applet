@@ -1,12 +1,14 @@
 <cu-custom bgColor="bg-gradual-blue">
-  <view slot="content">笑话大全</view>
+  <view slot="content">抚掌大笑</view>
 </cu-custom>
 
-<view class="cu-card article {{isCard?'no-card':''}}">
-  <view class="cu-item shadow">
-    <view class="text-content">{{jokeData[subscript].content}}</view>
+<scroll-view scroll-y class="scrollPage">
+  <view class='nav-list'>
+    <navigator open-type="navigate" hover-class='none' url="/pages/basics/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key="index">
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{item.name}}</view>
+      <text class='cuIcon-{{item.icon}}'></text>
+    </navigator>
   </view>
-</view>
-<view class="grid col-5 padding-sm" bindtap="handleNext">
-    <button class="cu-btn round bg-olive {{shadow?'shadow':''}}">下一个</button>
-</view>  
+  <view class='cu-tabbar-height'></view>
+</scroll-view>

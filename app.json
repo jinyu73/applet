@@ -1,18 +1,28 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/basics/home/home"
-    
+    "pages/basics/home/home",
+    "pages/basics/joke/joke",
+    "pages/basics/jokeImg/jokeImg",
+    "pages/basics/diary/diary",
+    "pages/basics/loveTalk/loveTalk",
+    "pages/basics/toxic/toxic",
+    "pages/basics/musicReview/musicReview",
+    "pages/basics/weather/weather"
     
   ],
   "window":{
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "快递查询",
     "navigationBarTextStyle":"white",
     "navigationStyle": "custom"
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的位置，查询天气情况"
+    }
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

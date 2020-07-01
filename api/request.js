@@ -1,4 +1,5 @@
-let sUrl = "https://api.avatardata.cn/";
+// let sUrl = "https://api.avatardata.cn/";
+let sUrl = "https://v1.alapi.cn/";
 
 const getData = (url, method, data) => {
   return new Promise((resolve, reject) => {
