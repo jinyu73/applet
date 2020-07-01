@@ -14,7 +14,7 @@ Component({
     //   name: 'background',
     //   color: 'blue',
     //   icon: 'colorlens'
-    // },
+    // }
     {
       title: '舔狗日记',
       name: 'diary',
